@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <meta charset="UTF-8">
+       <title>Афиша</title>
+       <link rel="stylesheet" href="success.css"> 
+       <script src="./success.js" defer></script> <!--Подключение скрипта-->
+    </head>
+    <body>
+       <!--Верхнее меню -->
+        <header class="header">
+           <div class="logo">Афиша</div>  
+           <nav class="menu">
+                <a href="#">Главная</a>
+                <a href="#">События</a>
+                <a href="#">Контакты</a>
+                <a href="#">О нас</a>
+           </nav> 
+           <!-- Добавлен элемент для приветствия -->
+           <div id="welcome"></div>      
+        </header>
+
+       <!--Основной контент-->
+       <main class="content">
+            <h1>Популярные события этой недели</h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="https://img19.rl0.ru/afisha/e592x396p186x244f2187x1463q65i/s1.afisha.ru/mediastorage/86/c5/a19fb1fd5de4427b908a451fc586.jpeg" alt="Концерт">
+                    <h2>Концерт группы "Рок - звезды"</h2>
+                    <p>Москва, Лужники - 15 ноября</p>
+                    <button>Купить билеты</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/get-altay/13220782/2a0000018f929164647adfce4338f86132a8/L" alt="Театр">
+                    <h2>Спектакль "Вечер в театре"</h2>
+                    <p>Санкт - Петербург, Мариинский театр - 18 ноября</p>
+                    <button>Купить билеты</button>
+                </div>  
+
+                <div class="card">
+                    <img src="https://www.erarta.com/upload/resize_cache/iblock/f35/550_380_2/v9qttg6elpypq287w230dnd3mrbumpz0.jpg" alt="Выставка">
+                    <h2>Выставка современного искусства</h2>
+                    <p>Казань, Центр современного искусства - 20 ноября</p>
+                    <button>Купить билеты</button>
+                </div> 
+
+            </div>
+            <div id ="modal" class="modal hidden"> 
+                <div class="modal-content"> 
+                    <p id = "modalText"></p>
+                    <button id = "confirmBtn">Да</button>
+                    <button id = "cancelBtn">Нет</button>
+                </div> 
+            </div>   
+        </main>
+         <script>   
+            // Получаем имя пользователя из localStorage
+            const username = localStorage.getItem('username');
+            document.getElementById('welcome').textContent = username
+                ? `Добро пожаловать, ${username}!`  // Исправлены кавычки
+                : 'Добро пожаловать!';
+        </script>
+    </body>
+</html>

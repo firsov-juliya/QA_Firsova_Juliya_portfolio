@@ -1,0 +1,60 @@
+/*Общие стили для всей страницы*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*Стиль для контейнера формы*/
+.container {
+  background-color: rgba(181, 212, 216, 0.664); 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 350px;  
+}
+
+/*Заголовок*/
+h1{
+ text-align: center;
+ color: #2c3e50; 
+}
+
+/*Метки полей*/
+label {
+  display: block;
+  margin-top: 15px; 
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/*Чекбокс*/
+.checkbox{
+  margin-top: 6px; 
+}
+
+button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #1b7fea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
