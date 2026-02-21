@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма регистрации</title>
+  
+  <!-- Подключаем внешний CSS-файл -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Регистрация</h1>
+
+    <!-- Форма с атрибутами id и name (важно для тестировщиков!) -->
+    <form id="registrationForm">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" placeholder="Введите имя" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Введите email" required>
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+      <label for="country">Страна:</label>
+      <select id="country" name="country" required>
+        <option value="">Выберите страну</option>
+        <option value="russia">Россия</option>
+        <option value="kazakhstan">Казахстан</option>
+        <option value="belarus">Беларусь</option>
+        <option value="ukraine">Украина</option>
+      </select>
+
+      <div class="checkbox">
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">Я согласен с условиями использования</label>
+      </div>
+      <button type="submit" id="submitBtn">Зарегистрироваться</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault();// Отключила стандартную отправку формы
+      const username = document.getElementById('username').value;
+      localStorage.setItem('username', username);
+      alert('Регистрация успешна! Добро пожаловать, ' + username + '!');
+      window.location.href = 'success.html'; // Перенаправление на страницу афиши
+    });
+  </script>
+</body>
+</html>
