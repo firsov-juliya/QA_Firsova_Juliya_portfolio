@@ -108,8 +108,8 @@ HAVING COUNT(*) > 2;
 
 
 ## Контакты
-- **GitHub:**   [github.com/firsov-juliya](https://github.com/firsov-juliya)
-- **Telegram:** [@F_Yulija](https://t.me/F_Yulija)
-- **Телефон:**  [ 8 927 120 47 24 ](tel:+79271204724)
-- **Email:**    [firsova.juliya@yandex.ru](mailto:firsova.juliya@yandex.ru)
-- **Резюме:**   [Скачать PDF](Firsova_Yuliya_CV.pdf) 
+- **💻 GitHub:**   [github.com/firsov-juliya](https://github.com/firsov-juliya)
+- **💬 Telegram:** [@F_Yulija](https://t.me/F_Yulija)
+- **📞 Телефон:**  [ 8 927 120 47 24 ](tel:+79271204724)
+- **📧 Email:**    [firsova.juliya@yandex.ru](mailto:firsova.juliya@yandex.ru)
+- **📄 Резюме:**   [Скачать PDF](Firsova_Yuliya_CV.pdf) 
